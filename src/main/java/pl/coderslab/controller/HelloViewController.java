@@ -23,7 +23,6 @@ public class HelloViewController {
             bgColor = "black";
             fontColor = "white";
         }
-
         model.addAttribute("backgroundColor", bgColor);
         model.addAttribute("fontColor", fontColor);
 
