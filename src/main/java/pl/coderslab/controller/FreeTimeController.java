@@ -15,14 +15,14 @@ public class FreeTimeController {
 
     @GetMapping("/day")
     @ResponseBody
-    public String getDate(){
+    public String getDate() {
         LocalDateTime now = LocalDateTime.now();
-       DayOfWeek today =  now.getDayOfWeek();
-       int hour = now.getHour();
+        DayOfWeek today = now.getDayOfWeek();
+        int hour = now.getHour();
 
-        if(today == DayOfWeek.SATURDAY || today == DayOfWeek.SUNDAY){
+        if (today == DayOfWeek.SATURDAY || today == DayOfWeek.SUNDAY) {
             return "Day Off";
-        }else if (hour > 8 && hour < 18){
+        } else if (hour > 8 && hour < 18) {
             return "I'm working!";
         }
         return "After work";

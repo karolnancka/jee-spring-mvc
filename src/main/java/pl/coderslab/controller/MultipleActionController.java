@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class MultipleActionController {
     @GetMapping("/form")
     public String firstAction() {
-        return "form.jsp";
+        return "form";
     }
 
     @PostMapping("/form")
